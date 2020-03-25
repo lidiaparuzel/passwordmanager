@@ -1,0 +1,72 @@
+:root {
+    --bodyBackground: #101C26;
+    --buttonBackground: #FDFDFF;
+    --borderColor: #62929E;
+}
+
+body {
+    background-color: var(--bodyBackground);
+    font-family: Courier, Consolas, monospace;
+}
+.container {
+    padding-top: 20px;
+    margin: 0 auto;
+    width: 80%;
+    display: block;
+    overflow: hidden;
+}
+.row {
+    text-align: left;
+    margin-bottom: 10px;
+}
+.row > input{
+    width: 25%;
+    height: 30px;
+    border: 2px solid;
+    border-color: var(--borderColor);
+    margin: 0;
+    margin-bottom: 0;
+    background-color: var(--buttonBackground);
+}
+.row > p {
+    float: right;
+    margin: 0 5px 5px 0;
+    font-size: 30px;
+    overflow: hidden;
+    line-height: 30px;
+}
+.row > p,input {
+    display: inline-block;
+    padding: 0;
+    vertical-align: bottom;
+}
+.row > .presentation {
+    width: 99%;
+    border: 2px solid;
+    border-color: var(--borderColor);
+    background-color: var(--buttonBackground);
+    height: auto;
+    min-height: 200px;
+    overflow: visible;
+    margin-top: 10px
+}
+
+@media only screen and (max-width: 730px) {
+    .container {
+        width: 100%;
+        padding-top: 0;
+    }
+    .row > input {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+    .row > p {
+        margin: 0 5px 0 0;
+    }
+    .row > .presentation {
+        margin-top: 0;
+    }
+    .row {
+        margin-bottom: 0;
+    }
+}
