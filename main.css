@@ -1,12 +1,20 @@
 :root {
-    --bodyBackground: #101C26;
+    /* 
+    Independence (light navy blue) : #3A506B
+    White: #FDFDFF
+    Eerie Black: #101C26
+    Pale Silver: #C6C5B9
+    Desaturated Cyan: #62929E
+    */
+    --bodyBackground: #101C26; 
     --buttonBackground: #FDFDFF;
     --borderColor: #62929E;
 }
 
 body {
     background-color: var(--bodyBackground);
-    font-family: Courier, Consolas, monospace;
+    font-family: "Open Sans", sans-serif;
+    color: #C6C5B9;
 }
 .container {
     padding-top: 20px;
@@ -14,6 +22,15 @@ body {
     width: 80%;
     display: block;
     overflow: hidden;
+}
+h1 {
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+}
+footer {
+    display: inline;
+    text-align: center;
+    font-size: 12px;
 }
 .row {
     text-align: left;
@@ -29,7 +46,6 @@ body {
     background-color: var(--buttonBackground);
 }
 .row > p {
-    float: right;
     margin: 0 5px 5px 0;
     font-size: 30px;
     overflow: hidden;
@@ -39,6 +55,9 @@ body {
     display: inline-block;
     padding: 0;
     vertical-align: bottom;
+}
+.emoji {
+    float: right;
 }
 .row > .presentation {
     width: 99%;
